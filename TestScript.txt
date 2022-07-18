@@ -1,6 +1,8 @@
-tArgs = {...}
+local tArgs = {...}
 
 r = require("robot")
+
+print(tArgs[0]);
 
 for i = 0, tArgs[0], 1 do
 	r.moveForward();
