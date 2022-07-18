@@ -2,11 +2,9 @@ local arguments_as_a_table = {...};
 
 r = require("robot");
 
-local moveDistance = arguments_as_a_table[0];
+local moveDistance = 0
+moveDistance = arguments_as_a_table[0];
 
-if moveDistance == nil then
-	moveDistance = 0;
-end
 
 print("Moving " + moveDistance.toString() + " Blocks");
 
