@@ -2,7 +2,9 @@ local tArgs = {...}
 
 r = require("robot")
 
-print("Moving " + tArgs[0].toString() + " Blocks");
+local moveDistance = tArgs[0]
+
+print("Moving " + moveDistance.toString() + " Blocks");
 
 for i = 0, tArgs[0], 1 do
 	r.moveForward();
