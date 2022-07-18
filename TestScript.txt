@@ -1,11 +1,11 @@
-local tArgs = {...}
+local arguments_as_a_table = {...};
 
-r = require("robot")
+r = require("robot");
 
-local moveDistance = tArgs[0]
+local moveDistance = arguments_as_a_table[0];
 
 print("Moving " + moveDistance.toString() + " Blocks");
 
-for i = 0, tArgs[0], 1 do
+for i = 0, moveDistance, 1 do
 	r.moveForward();
 end
