@@ -12,6 +12,6 @@ r = require("robot");
 	--r.moveForward();
 --end
 
-for i = 0, arguments_as_a_table.length, 1 do
+for i = 0, table.getn(arguments_as_a_table), 1 do
 	print(i);
 end
