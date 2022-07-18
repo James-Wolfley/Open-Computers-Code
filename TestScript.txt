@@ -2,15 +2,15 @@ local arguments_as_a_table = {...};
 
 r = require("robot");
 
-local moveDistance = 0
-moveDistance = arguments_as_a_table[0];
+--local moveDistance = 0
+--moveDistance = arguments_as_a_table[0];
 
 
-print("Moving " + moveDistance.toString() + " Blocks");
+--print("Moving " + moveDistance.toString() + " Blocks");
 
-for i = 0, moveDistance, 1 do
-	r.moveForward();
-end
+--for i = 0, moveDistance, 1 do
+	--r.moveForward();
+--end
 
 for i = 0, arguments_as_a_table.length, 1 do
 	print(i);
