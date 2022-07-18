@@ -1,17 +1,10 @@
-local arguments_as_a_table = {...};
-
 r = require("robot");
 
---local moveDistance = 0
---moveDistance = arguments_as_a_table[0];
+local moveDistance = io.read();
 
 
---print("Moving " + moveDistance.toString() + " Blocks");
+print("Moving " + moveDistance.toString() + " Blocks");
 
---for i = 0, moveDistance, 1 do
-	--r.moveForward();
---end
-
-for i = 0, table.getn(arguments_as_a_table), 1 do
-	print(i);
+for i = 0, moveDistance, 1 do
+    r.moveForward();
 end
