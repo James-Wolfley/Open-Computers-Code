@@ -13,3 +13,7 @@ print("Moving " + moveDistance.toString() + " Blocks");
 for i = 0, moveDistance, 1 do
 	r.moveForward();
 end
+
+for i = 0, arguments_as_a_table.length, 1 do
+	print(i);
+end
