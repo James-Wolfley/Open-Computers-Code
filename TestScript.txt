@@ -4,6 +4,10 @@ r = require("robot");
 
 local moveDistance = arguments_as_a_table[0];
 
+if moveDistance == nil then
+	moveDistance = 0;
+end
+
 print("Moving " + moveDistance.toString() + " Blocks");
 
 for i = 0, moveDistance, 1 do
