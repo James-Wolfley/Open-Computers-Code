@@ -1,0 +1,7 @@
+tArgs = {...}
+
+r = require("robot")
+
+for i = 0, tArgs[0], 1 do
+	r.moveForward();
+end
